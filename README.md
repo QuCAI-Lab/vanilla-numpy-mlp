@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11.3-informational)](https://www.python.org/downloads/source/)
 [![Contributions](https://img.shields.io/badge/contributions-welcome-orange?style=flat-square)](https://github.com/QuCAI-Lab/vanilla-numpy-mlp/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/QuCAI-Lab/vanilla-numpy-mlp/graphs/commit-activity)
-[![License](https://img.shields.io/github/license/camponogaraviera/vanilla-numpy-mlp.svg?logo=CreativeCommons&style=flat-square)](LICENSE.md)
+[![License](https://img.shields.io/github/license/QuCAI-Lab/vanilla-numpy-mlp.svg?logo=CreativeCommons&style=flat-square)](LICENSE.md)
 
 <!-- Title: -->
 <div align="center">
