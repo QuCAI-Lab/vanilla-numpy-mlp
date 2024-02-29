@@ -17,25 +17,30 @@
 
 # About
 
-Implementation of a vanilla NumPy multilayer perceptron (MLP): a fully connected feedforward neural network with Stochastic Gradient Descent (SGD) optimizer and backpropagation. The implementation was trained/tested using the Fashion-MNIST dataset for image classification. Resort to the [theory.ipynb](theory.ipynb) notebook for a theoretical background and derivation of the backpropagation algorithm considering `Sigmoid`, `Softmax`, `MSE`, and `Categorical Cross-Entropy` functions.
+> This material is designed to educate by bridging the gap between theory and implementation. If there is a blunder, do not hesitate to open an issue in the issue tracker.
+
+Vanilla NumPy [implementation](https://github.com/QuCAI-Lab/vanilla-numpy-mlp/blob/dev/fmnist_backprop_numpy.ipynb) of multilayer perceptron (MLP), a fully connected feedforward neural network, including Stochastic Gradient Descent (SGD) optimizer and backpropagation algorithm. The implementation was trained/tested using the Fashion-MNIST dataset for image classification. Resort to the [theory.ipynb](theory.ipynb) notebook for a theoretical background and derivation of the backpropagation algorithm, considering `Sigmoid` and `Softmax` activation functions, as well as `MSE` and `Categorical Cross-Entropy` loss functions.
 
 To comply with GitHub's limit on large files, the dataset folder was git ignored. Download the [Fashion MNIST](https://www.kaggle.com/datasets/zalando-research/fashionmnist) dataset, extract it, then yank and paste the train and test files to a `dataset/` folder in the root directory of your local clone.
-
-> This material is designed to educate by bridging the gap between theory and implementation. If there is a blunder, do not hesitate to open an issue in the issue tracker.
 
 <div align="center">
   <a href="#"><img src="assets/predictions.png"/></a>
   <a href="#"><img src="assets/training_plot.png"/></a>
 </div> 
 
+# Technologies
+
+- `NumPy`: data preprocessing (reading from CSV, decoding, rescaling, data splitting, data augmentation), feature engineering (one-hot encoding for labels), activation/loss functions, forward pass, backpropagation, etc.
+- `Matplotlib`: plotting.
+    
 # Implementation details
 
-- [fmnist_backprop_numpy.ipynb](fmnist_backprop_numpy.ipynb):
-    - Architecture: MLP with two fully-connected hidden layers. Has support for two loss functions (**mse** and **cross-entropy**), three weight initializations (**xavier**, **he** or **normal**), **L2 regularization**, and training by batches.
-    - Framework and Libraries: NumPy.
-    - Dataset: [Fashion MNIST](https://www.kaggle.com/datasets/zalando-research/fashionmnist).
+- Architecture: MLP with two fully-connected hidden layers. Has support for two loss functions (**mse** and **cross-entropy**), three weight initializations (**xavier**, **he** or **normal**), **L2 regularization**, and training by batches.
+- Dataset: [Fashion MNIST](https://www.kaggle.com/datasets/zalando-research/fashionmnist).
 
-# Conda env.
+# Setting up the environment
+
+I recommend Conda for environment management.
 
 ```bash
 conda create -yn mlp python==3.11.3 && conda activate mlp \
